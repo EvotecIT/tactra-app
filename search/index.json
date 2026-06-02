@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Privacy Policy",
+    "url": "/privacy/",
+    "description": "Tactra Remote privacy policy for App Store Connect and users.",
+    "snippet": "Privacy Privacy Policy Last updated: June 2, 2026 Tactra Remote is designed as a local-first media control app for your own Home Assistant environment. We do not sell personal data, run advertising tracking, or operate a cloud service for c...",
+    "collection": "pages",
+    "tags": []
+  },
+  {
+    "title": "Support",
+    "url": "/support/",
+    "description": "Support information for Tactra Remote.",
+    "snippet": "Support Tactra Remote support For TestFlight, setup, and release questions, use the Evotec Discord support channel. Get help Join the Evotec Discord and include your platform, Tactra build number, Home Assistant version, and the media devic...",
+    "collection": "pages",
+    "tags": []
+  },
+  {
+    "title": "Tactra Remote",
+    "url": "/",
+    "description": "Premium Home Assistant media control for iPhone, iPad, Apple Watch, and Mac.",
+    "snippet": "Home Assistant media control Tactra Remote A focused Apple-native remote for speakers, amplifiers, TVs, streamers, soundbars, consoles, and media rooms exposed through Home Assistant. Join TestFlight updates View pricing Preparing V1 iPhone...",
+    "collection": "pages",
+    "tags": []
+  }
+]

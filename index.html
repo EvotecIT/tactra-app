@@ -1,94 +1,132 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tactra Remote</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0f1115;
-      --panel: #1a1d22;
-      --text: #e8eaed;
-      --muted: #a9b0bb;
-      --amber: #ff9a1f;
-      --teal: #2dd4bf;
-    }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at 50% 0%, #22252d 0, var(--bg) 44rem);
-      color: var(--text);
-      line-height: 1.5;
-    }
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 72px 24px;
-    }
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(42px, 8vw, 76px);
-      line-height: 1;
-      letter-spacing: 0;
-    }
-    h2 {
-      margin: 44px 0 12px;
-      font-size: 24px;
-    }
-    p, li {
-      color: var(--muted);
-      font-size: 18px;
-    }
-    a {
-      color: var(--teal);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .eyebrow {
-      color: var(--amber);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      font-size: 13px;
-    }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
-    }
-    .links a {
-      border: 1px solid rgba(232, 234, 237, .18);
-      border-radius: 8px;
-      padding: 10px 14px;
-      background: rgba(26, 29, 34, .72);
-    }
-  </style>
+  <meta name="description" content="Premium Home Assistant media control for iPhone, iPad, Apple Watch, and Mac." />
+  
+  <meta name="theme-color" content="#0F1115" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tactra Remote" />
+  <meta property="og:description" content="Premium Home Assistant media control for iPhone, iPad, Apple Watch, and Mac." />
+  <meta property="og:image" content="https://evotecit.github.io/tactra-app/assets/tactra-hero.png" />
+  
+    <link rel="preload" as="image" href="assets/tactra-hero.png" />
+    <link rel="stylesheet" href="themes/tactra/assets/site.css" />
+    
 </head>
-<body>
-  <main>
-    <p class="eyebrow">Premium Home Assistant remote</p>
-    <h1>Tactra Remote</h1>
-    <p>
-      Tactra is a focused Apple-native media remote for Home Assistant. It controls
-      speakers, TVs, streamers, soundbars, receivers, and media activities across
-      iPhone, iPad, Apple Watch, and Mac.
-    </p>
-    <div class="links">
-      <a href="privacy/">Privacy Policy</a>
+<body class="tactra-page ">
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Tactra Remote home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Tactra Remote</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="./">Product</a>
+      <a href="privacy/">Privacy</a>
       <a href="support/">Support</a>
-      <a href="https://evo.yt/discord">Discord</a>
-    </div>
+    </nav>
+    <a class="header-action" href="http://evo.yt/discord">Support</a>
+  </header>
 
-    <h2>Local-first by design</h2>
-    <p>
-      Tactra does not require a Tactra account or Tactra-hosted cloud service.
-      Home Assistant remains the source of truth, and credentials are stored
-      locally in the Apple Keychain.
-    </p>
+  <main id="main">
+    <article class="markdown-body"><section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Home Assistant media control</p>
+        <h1 id="tactra-remote">Tactra Remote</h1>
+        <p class="hero-lede">A focused Apple-native remote for speakers, amplifiers, TVs, streamers, soundbars, consoles, and media rooms exposed through Home Assistant.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="http://evo.yt/discord">Join TestFlight updates</a>
+          <a class="button ghost" href="#pricing">View pricing</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Tactra release summary">
+        <span>Preparing V1</span>
+        <strong>iPhone, iPad, Watch, Mac</strong>
+        <small>One purchase. Local-first control. No subscriptions.</small>
+      </div>
+    </section><section class="section intro-band">
+      <div class="section-heading">
+        <p class="eyebrow">Built for the media rack</p>
+        <h2 id="not-a-generic-dashboard">Not a generic dashboard.</h2>
+      </div>
+      <div class="intro-grid">
+        <article>
+          <span class="icon-ring amber"></span>
+          <h3 id="hi-fi-control-surface">Hi-fi control surface</h3>
+          <p>Large tactile volume, clear routing, source selection, playback controls, and quick access to the devices you actually touch every day.</p>
+        </article>
+        <article>
+          <span class="icon-ring teal"></span>
+          <h3 id="home-assistant-first">Home Assistant first</h3>
+          <p>Media players, remotes, sources, and service calls are normalized before the UI uses them, keeping the app focused and predictable.</p>
+        </article>
+        <article>
+          <span class="icon-ring purple"></span>
+          <h3 id="local-and-private">Local and private</h3>
+          <p>Tactra is designed around your own Home Assistant instance and local network. We do not collect or sell personal data.</p>
+        </article>
+      </div>
+    </section><section class="section product-split">
+      <div>
+        <p class="eyebrow">Apple-native surfaces</p>
+        <h2 id="one-media-remote-across-the-apple-devices-in-your-home">One media remote across the Apple devices in your home.</h2>
+        <p>Tactra is being prepared as one product path for iPhone, iPad, Apple Watch, and Mac. The goal is a single purchase that follows the user instead of splitting the same remote into separate apps.</p>
+      </div>
+      <div class="feature-list">
+        <div>
+          <strong>Home</strong>
+          <span>Active rooms, quick actions, favorites, and activity previews.</span>
+        </div>
+        <div>
+          <strong>Control</strong>
+          <span>Audio target picker, retro volume knob, source selection, mute, and now playing.</span>
+        </div>
+        <div>
+          <strong>Remote</strong>
+          <span>TV, Apple TV, console, and remote entity controls with separate audio/playback targets.</span>
+        </div>
+        <div>
+          <strong>Activities</strong>
+          <span>Multi-device routines for screens, audio, lights, consoles, and Home Assistant services.</span>
+        </div>
+      </div>
+    </section><section class="section pricing-section" id="pricing">
+      <div class="price-card">
+        <p class="eyebrow">Release pricing</p>
+        <h2 id="paid-once-no-trial-no-subscription">Paid once. No trial. No subscription.</h2>
+        <p>The planned base price is USD 9.99, with equivalent App Store pricing tiers worldwide. Optional provider unlocks may be added later for direct integrations, while Home Assistant remains the primary V1 path.</p>
+        <div class="price-line">
+          <span>Base app</span>
+          <strong>USD 9.99</strong>
+        </div>
+      </div>
+      <div class="launch-card">
+        <h3 id="first-release-focus">First release focus</h3>
+        <p>Reliable media-player control, polished Apple UI, clear unavailable states, local-network behavior, privacy documentation, and a TestFlight build ready for real devices.</p>
+      </div>
+    </section><section class="section cta-band">
+      <div>
+        <p class="eyebrow">Support and TestFlight</p>
+        <h2 id="follow-the-first-release">Follow the first release.</h2>
+        <p>For TestFlight coordination, support, and release questions, use the Evotec Discord while the dedicated Tactra site and App Store listing are finalized.</p>
+      </div>
+      <a class="button primary" href="http://evo.yt/discord">Open Discord</a>
+    </section></article>
   </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tactra Remote</strong>
+      <span>Premium media control for Home Assistant.</span>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="privacy/">Privacy</a>
+      <a href="support/">Support</a>
+      <a href="http://evo.yt/discord">Discord</a>
+    </nav>
+    <small>Copyright 2026 Evotec Services sp. z o.o. All rights reserved.</small>
+  </footer>
+
 </body>
 </html>

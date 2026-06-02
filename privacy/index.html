@@ -1,146 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tactra Remote Privacy Policy</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0f1115;
-      --panel: #1a1d22;
-      --text: #e8eaed;
-      --muted: #a9b0bb;
-      --amber: #ff9a1f;
-      --teal: #2dd4bf;
-    }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    main {
-      max-width: 840px;
-      margin: 0 auto;
-      padding: 56px 24px 80px;
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(34px, 7vw, 58px);
-      line-height: 1.05;
-      letter-spacing: 0;
-    }
-    h2 {
-      margin: 36px 0 10px;
-      font-size: 24px;
-    }
-    p, li {
-      color: var(--muted);
-      font-size: 17px;
-    }
-    a {
-      color: var(--teal);
-    }
-    .date {
-      color: var(--amber);
-      font-weight: 700;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Tactra Remote</title>
+  <meta name="description" content="Tactra Remote privacy policy for App Store Connect and users." />
+  
+  <meta name="theme-color" content="#0F1115" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Privacy Policy | Tactra Remote" />
+  <meta property="og:description" content="Tactra Remote privacy policy for App Store Connect and users." />
+  <meta property="og:image" content="https://evotecit.github.io/tactra-app/assets/tactra-hero.png" />
+  
+    <link rel="preload" as="image" href="../assets/tactra-hero.png" />
+    <link rel="stylesheet" href="../themes/tactra/assets/site.css" />
+    
 </head>
-<body>
-  <main>
-    <h1>Tactra Remote Privacy Policy</h1>
-    <p class="date">Last updated: June 2, 2026</p>
-    <p>
-      Tactra Remote is a local-first media remote for Home Assistant. It is
-      designed to control your own media devices through your own Home Assistant
-      instance and local network.
-    </p>
+<body class="tactra-page ">
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Tactra Remote home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Tactra Remote</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../">Product</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../support/">Support</a>
+    </nav>
+    <a class="header-action" href="http://evo.yt/discord">Support</a>
+  </header>
 
-    <h2>Data Tactra Handles</h2>
-    <p>Tactra may store the following information on your devices:</p>
-    <ul>
-      <li>Home Assistant server URL and instance name.</li>
-      <li>Home Assistant long-lived access token.</li>
-      <li>Selected media targets, favorite devices, activities, device preferences, control mappings, and app preferences.</li>
-      <li>Non-sensitive device snapshots used by widgets, App Intents, Shortcuts, Live Activities, and the Apple Watch companion.</li>
-      <li>Optional direct-provider endpoint information, such as local hostnames, IP addresses, ports, display names, and pairing status for supported local devices.</li>
-    </ul>
-
-    <h2>Sensitive Data</h2>
-    <p>
-      Home Assistant access tokens are stored locally in the Apple Keychain.
-      Tactra does not intentionally sync Home Assistant access tokens through
-      iCloud, widgets, App Intents, Watch snapshots, or app-group storage.
-    </p>
-
-    <h2>Local Network</h2>
-    <p>
-      Tactra can connect to Home Assistant and supported local media devices on
-      your network. It may use local-network discovery protocols such as
-      Bonjour/mDNS or SSDP/UPnP to find compatible devices. Local network data is
-      used to show and control your own devices. Tactra does not send local
-      network discovery results to a Tactra-operated cloud service.
-    </p>
-
-    <h2>Widgets, Shortcuts, and Apple Watch</h2>
-    <p>
-      Tactra uses an app group to share compact non-sensitive snapshots and
-      preferences with widgets, App Intents, Shortcuts, Live Activities, and the
-      Apple Watch companion. These snapshots may include device names, rooms,
-      availability, playback state, volume state, source names, and activity
-      names so Apple system surfaces can display useful controls.
-    </p>
-
-    <h2>iCloud Preference Sync</h2>
-    <p>
-      Tactra may offer manual iCloud key-value preference sync for non-sensitive
-      settings, such as selected targets, favorites, activity preferences, device
-      profiles, and direct endpoint metadata. Home Assistant access tokens are
-      not included in this sync.
-    </p>
-
-    <h2>Data Collection by Tactra</h2>
-    <p>
-      Tactra does not require a Tactra account, does not operate an advertising
-      network, does not sell your data, does not use your data for third-party
-      tracking, and does not upload your Home Assistant token, device list, local
-      network devices, or activity preferences to a Tactra-operated backend.
-    </p>
-
-    <h2>Apple Services</h2>
-    <p>
-      When you download, purchase, update, or test Tactra through Apple
-      platforms, Apple may process purchase, download, crash, diagnostics,
-      analytics, and TestFlight feedback information according to Apple's own
-      policies and your Apple settings. If you enable iCloud preference sync,
-      Apple provides the iCloud storage and transport for that Apple service.
-    </p>
-
-    <h2>Feedback and Support</h2>
-    <p>
-      If you contact support or send TestFlight feedback, the information you
-      provide may include your email address, screenshots, crash logs, device
-      model, operating system version, and details you choose to include. Support
-      information is used to diagnose issues and improve Tactra.
-    </p>
-
-    <h2>Data Deletion</h2>
-    <p>
-      You can remove Tactra's local app data by deleting the app from your
-      devices. You can revoke Home Assistant tokens in your Home Assistant
-      profile. You can clear or replace saved Home Assistant instances and app
-      preferences inside Tactra where supported.
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-      Publisher: Evotec Services sp. z o.o.<br>
-      Support: <a href="../support/">Tactra Support</a><br>
-      Community: <a href="https://evo.yt/discord">Evotec Discord</a>
-    </p>
+  <main id="main">
+    <article class="markdown-body"><section class="legal-hero">
+      <p class="eyebrow">Privacy</p>
+      <h1 id="privacy-policy">Privacy Policy</h1>
+      <p>Last updated: June 2, 2026</p>
+    </section><section class="legal-content">
+      <p>Tactra Remote is designed as a local-first media control app for your own Home Assistant environment. We do not sell personal data, run advertising tracking, or operate a cloud service for controlling your devices.</p>  <h2 id="data-tactra-uses">Data Tactra uses</h2>  <p>The app may store Home Assistant connection settings, selected devices, preferences, routing choices, and local app configuration on your Apple devices or in Apple-supported app storage. This information is used to operate the app.</p>  <h2 id="home-assistant-communication">Home Assistant communication</h2>  <p>Tactra communicates with the Home Assistant server you configure. Device names, entity states, sources, and media-player capabilities come from that Home Assistant instance and are used to render controls and perform actions.</p>  <h2 id="no-tracking-or-advertising">No tracking or advertising</h2>  <p>Tactra does not include third-party advertising trackers and does not sell user information. If future diagnostics are added, they will be documented before release and kept separate from device-control content.</p>  <h2 id="optional-support-contact">Optional support contact</h2>  <p>If you contact us for support, we will receive the information you choose to share in that message. Please avoid posting access tokens, passwords, or private network details in public channels.</p>  <h2 id="contact">Contact</h2>  <p>Support is available through the Evotec Discord at <a href="http://evo.yt/discord">http://evo.yt/discord</a>.</p></section></article>
   </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tactra Remote</strong>
+      <span>Premium media control for Home Assistant.</span>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="../privacy/">Privacy</a>
+      <a href="../support/">Support</a>
+      <a href="http://evo.yt/discord">Discord</a>
+    </nav>
+    <small>Copyright 2026 Evotec Services sp. z o.o. All rights reserved.</small>
+  </footer>
+
 </body>
 </html>
