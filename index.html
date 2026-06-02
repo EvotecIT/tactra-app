@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tactra Remote</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f1115;
+      --panel: #1a1d22;
+      --text: #e8eaed;
+      --muted: #a9b0bb;
+      --amber: #ff9a1f;
+      --teal: #2dd4bf;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 50% 0%, #22252d 0, var(--bg) 44rem);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 44px 0 12px;
+      font-size: 24px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 18px;
+    }
+    a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .eyebrow {
+      color: var(--amber);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: 13px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .links a {
+      border: 1px solid rgba(232, 234, 237, .18);
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: rgba(26, 29, 34, .72);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Premium Home Assistant remote</p>
+    <h1>Tactra Remote</h1>
+    <p>
+      Tactra is a focused Apple-native media remote for Home Assistant. It controls
+      speakers, TVs, streamers, soundbars, receivers, and media activities across
+      iPhone, iPad, Apple Watch, and Mac.
+    </p>
+    <div class="links">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="support/">Support</a>
+      <a href="https://evo.yt/discord">Discord</a>
+    </div>
+
+    <h2>Local-first by design</h2>
+    <p>
+      Tactra does not require a Tactra account or Tactra-hosted cloud service.
+      Home Assistant remains the source of truth, and credentials are stored
+      locally in the Apple Keychain.
+    </p>
+  </main>
+</body>
+</html>
