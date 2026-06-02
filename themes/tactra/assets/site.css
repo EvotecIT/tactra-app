@@ -68,16 +68,12 @@ a {
   white-space: nowrap;
 }
 
-.brand-mark {
+.brand-icon {
   width: 28px;
   height: 28px;
-  border: 1px solid rgba(255, 154, 31, 0.52);
-  border-radius: 8px;
-  background:
-    linear-gradient(90deg, transparent 8px, rgba(255, 154, 31, 0.9) 8px 10px, transparent 10px),
-    linear-gradient(90deg, transparent 15px, rgba(45, 212, 191, 0.82) 15px 17px, transparent 17px),
-    linear-gradient(90deg, transparent 21px, rgba(139, 92, 246, 0.86) 21px 23px, transparent 23px),
-    rgba(255, 154, 31, 0.12);
+  display: block;
+  border-radius: 7px;
+  box-shadow: 0 0 18px rgba(255, 154, 31, 0.18);
 }
 
 .site-nav {
